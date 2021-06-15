@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+#example1 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px red;
+}
+#example2 {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+}
+body:hover{
+background-color:lightblue;
+}
+</style>
+</head>
+<body>
+
+<h1>The box-shadow Property</h1>
+<p>The box-shadow property defines the shadow of an element:</p>
+
+<h2>box-shadow: 5px 10px red:</h2>
+<div id="example1">
+  <p>A red shadow.</p>
+</div>
+</br>
+<div id="example2">
+  <p>A red shadow.</p>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+</style>
+</head>
+<body>
+
+<p><b>Note:</b> This example for css animations.</p>
+
+<div class="animate"></div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.pagination {
+  display: inline-block;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+</style>
+</head>
+<body>
+
+<h2>Pagination with Margins</h2>
+
+<div class="pagination">
+  <a href="#">&laquo;</a>
+  <a href="#" class="active">1</a>
+  <a href="#" class="">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.pagination1 {
+  display: inline-block;
+}
+
+.pagination1 a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+  border: 1px solid #ddd;
+}
+
+.pagination1 a.active1 {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+</style>
+</head>
+<body>
+
+<h2>Pagination with Borders</h2>
+
+<div class="pagination1">
+  <a href="#">&laquo;</a>
+  <a href="#">1</a>
+  <a href="#" class="active1">2</a>
+  <a href="#">3</a>
+  <a href="#">4</a>
+  <a href="#">5</a>
+  <a href="#">6</a>
+  <a href="#">&raquo;</a>
+</div>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#parent1 {
+  position: static;
+  border: 1px solid blue;
+  width: 300px;
+  height: 100px;
+}
+
+
+
+#parent2 {
+  position: relative;
+  border: 1px solid blue;
+  width: 300px;
+  height: 100px;
+}
+
+
+
+#parent3 {
+  position: absolute;
+  border: 1px solid blue;
+  width: 300px;
+  height: 100px;
+  top: 750px;
+  right: 15px;
+}
+
+
+
+#parent4 {
+  position: fixed;
+  border: 1px solid blue;
+  background-color: rgba(255,200,200,0.5);  
+  width: 300px;
+  height: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#parent5 {
+  position: sticky;
+  border: 1px solid blue;
+  background-color: rgba(255,200,200,0.5);  
+  width: 300px;
+  height: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+</style>
+</head>
+<body>
+<h1>The position property</h1>
+
+<div id="parent1">Parent1: position: static.
+</div>
+
+<div id="parent2">Parent2: position: relative.
+</div>
+<div id="parent3">Parent3: position: absolute
+</div>
+<!--
+<div id="parent4">Parent4: position: fixed
+</div>-->
+<div id="parent5">Parent5: position: sticky
+</div>
+</body>
+</html>
+</br>
+</br>
+</br>
+</br>
+</br>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.ovrflvisi{
+  background-color: #eee;
+  width: 200px;
+  height: 50px;
+  border: 1px dotted black;
+  overflow: scroll;
+}
+</style>
+</head>
+<body>
+
+<h2>CSS Overflow</h2>
+<p>By default, the overflow is visible, meaning that it is not clipped and it renders outside the element's box:</p>
+
+<div class="ovrflvisi">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+
+</body>
+</html>
+
+​<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1.0;
+}
+</style>
+</head>
+<body>
+
+<h1>Image Transparency</h1>
+<p>The opacity property is often used together with the :hover selector to change the opacity on mouse-over:</p>
+<img src="sunset.jpg" alt="Forest" width="170" height="100">
+<img src="view.jpg" alt="Mountains" width="170" height="100">
+<img src="view1
+.jpg" alt="Italy" width="170" height="100">
+
+</body>
+</html>

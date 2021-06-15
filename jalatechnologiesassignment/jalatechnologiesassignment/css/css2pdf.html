@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+  width: 100%;
+}
+table:hover {
+  background-color: yellow;
+}
+h2.a {
+  visibility: visible;
+}
+
+h2.b {
+  visibility: hidden;
+}
+h2.c{
+visibility:collapse;
+}
+
+h1.hidden {
+  display: none;
+}
+p {color: red;}
+
+p.ex1 {display: none;}
+p.ex2 {display: inline;}
+p.ex3 {display: block;}
+p.ex4 {display: inline-block;}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+#section1 {
+  height: 200px;
+  background-color: pink;
+}
+
+#section2 {
+  height: 200px;
+  background-color: yellow;
+}
+
+div {
+  border: 1px solid black;
+  background-color: lightblue;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+.marginadding{
+  border: 1px solid black;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+  background-color: lightblue;
+}
+#example1 {
+  background-image: url(view.jpg), url(view1.jpg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, no-repeat,no-repeat;
+  background-size: 800px 800px;
+}
+</style>
+</head>
+<body>
+
+<h2>FullTable</h2>
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+  </tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+  </tr>
+</table>
+</br>
+<h1>The visibility Property</h1>
+
+<h2 class="a">This heading is visible</h2>
+
+<h2 class="b">This heading is hidden</h2>
+<h2 class="c"> this heading is collapse</h2>
+
+<p>Notice that the hidden heading and collapse heading still takes up space on the page.</p>
+</br>
+<h1>This is a visible heading</h1>
+<h1 class="hidden">This is a hidden heading</h1>
+<p>Notice that the h1 element with display: none; does not take up any space.</p>
+</br>
+<h1>The display Property</h1>
+
+<h2>display: none:</h2>
+<div>
+hi welcome to webtechnologies coding <p class="ex1">HTML AND CSS</p> my first programming
+</div>
+
+<h2>display: inline:</h2>
+<div>
+ hi welcome to webtechnologies coding<p class="ex2">HTML AND CSS</p> my first programming
+</div>
+
+<h2>display: block:</h2>
+<div>
+  hi welcome to webtechnologies coding<p class="ex3">HTML AND CSS</p> my first programming
+</div>
+
+<h2>display: inline-block:</h2>
+<div>
+  hi welcome to webtechnologies coding<p class="ex4">HTML AND CSS</p> my first programming
+</div>
+</br>
+<h1>Smooth Scroll</h1>
+
+<div class="main" id="section1">
+  <h2>Section 1</h2>
+  <p>Click on the link to see the "smooth" scrolling effect.</p>
+  <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+  <p>Note: Remove the scroll-behavior property to remove smooth scrolling.</p>
+</div>
+
+<div class="main" id="section2">
+  <h2>Section 2</h2>
+  <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+</div>
+</br>
+<h2 class="marginadding">Using individual margin properties</h2>
+
+<div>This div element has a top padding of 50px, a right padding of 30px, a bottom padding of 50px, and a left padding of 80px.</div>
+</br>
+<h1 id>Multiple Backgrounds</h1>
+<p>The following div element has two background images:</p>
+
+<div id="example1">
+  <h1>multiple backgrounds</h1>
+  <p>background with multiple images</p>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

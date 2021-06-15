@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The JavaScript <i>this</i> Keyword</h2>
+
+<button onclick="this.style.display='none'">Click to Remove Me!</button>
+<p id="demo"></p>
+
+<script>
+const person = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+const person1 = {
+  firstName:"usha",
+  lastName: "dakkili"
+}
+const person2 = {
+  firstName:"sneha",
+  lastName: "Dakkili"
+}
+// callling person1 object
+document.getElementById("demo").innerHTML = person.fullName.call(person1); 
+</script>
+<p id="demo1"></p>
+
+<script>
+var personname= {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+var person3 = {
+  firstName:"happy",
+  lastName: "welcome"
+}
+var x = personname.fullName.apply(person3); 
+document.getElementById("demo1").innerHTML = x; 
+</script>
+<script>
+function clickCounter() {
+  if(typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+  } 
+  
+}
+</script>
+
+
+<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<div id="result"></div>
+<p>Click the button to see the counter increase.</p>
+
+
+<html>
+<head>
+<script>
+class Person {
+       constructor(firstname, lastname) {
+            this.firstname = firstname;
+            this.lastname = lastname;
+        }
+        // getters => access properties
+        // setters => change or mutate them
+        get fullName() {
+            return `Hello ${this.firstname} ${this.lastname}`;
+        }
+        set fullName(space) {
+            const parts = space.split(' ');
+            this.firstname = parts[0];
+            this.lastname = parts[1];
+        }
+    }
+    let run = document.getElementById("run");
+    run.addEventListener('click', () => {
+        let john = new Person('John', 'Connor');
+        document.getElementById("text").innerHTML=john.fullName; 
+        //console.log(john.fullName);
+        john.fullName = 'Billy Butcher';
+       
+        x=john.firstname + ' ' + john.lastname;
+         document.getElementById("text").innerHTML=john.fullName; 
+      	//console.log(`${john.firstname} ${john.lastname}`); same output
+      // => has to be john.firstname otherwise undefined 
+    }) 
+</script>
+</head>
+<body>
+
+<p><button id="run">run!</button></p>
+<p id="text"></p>
+
+
+
+</body>
+</html>

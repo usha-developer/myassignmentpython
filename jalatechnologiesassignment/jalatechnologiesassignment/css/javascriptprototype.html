@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Objects</h2>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<script>
+function Person(first, last, age, eye) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+}
+
+Person.prototype.nationality = "English";
+
+var myFather = new Person("John", "Doe", 50, "blue");
+var nameB = new Person("usha","dakkili",23,"black");
+document.getElementById("demo").innerHTML =
+"The nationality of my father is " + myFather.nationality; 
+document.getElementById("demo1").innerHTML =
+"My age is " + nameB.age; 
+</script>
+
+
+
+
+
+</body>
+</html>
